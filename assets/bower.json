@@ -1,0 +1,17 @@
+{
+  "name": "ci_mvc",
+  "version": "1.0.0",
+  "authors": [
+    "diazGeoff <diazgeoff93@gmail.com>"
+  ],
+  "description": "Assets",
+  "keywords": [
+    "assets"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "angular": "~1.3.5",
+    "lodash": "~2.4.1"
+  }
+}
