@@ -44,6 +44,8 @@ $route = array(
 		'home' => 'home',
 		'api/get/posts' => 'home/get_posts',
 		'api/post/add' => 'home/add_posts',
+		'api/get/graduates' => 'spa/get_graduates',
+		'selection' => 'spa',
 		'404_override' => ''
 	);
 

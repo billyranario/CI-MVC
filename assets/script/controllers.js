@@ -49,4 +49,21 @@ app
 				} );
 			};	
 		}
+	] )
+	.controller('navController' , [
+		"$scope",
+		"$http",
+		"getServerData",
+		function controller ( $scope , $http , getServerData ) {			
+			$scope.nav = function nav ( tab ) {
+				$scope.main.$broadcast( "hide" );
+				if ( tab == 1 ) {					
+					$scope.main.$broadcast( "show-notification" );
+				}else if ( tab == 2 ) {
+					$scope.main.$broadcast( "show-list" );					
+				}else if ( tab == 3 ) {
+					$scope.main.$broadcast( "show-add" );
+				}
+			};
+		}
 	] );

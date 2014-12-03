@@ -10,4 +10,18 @@ app
 				}
 			}
 		}
+	] )
+	.factory('getGraduates' , [
+		"$http",
+		"getServerData",
+		function factory ( $http , getServerData ) {
+			return {
+				get: function get ( callback ) {
+					$http.get(getServerData.url + 'api/get/graduates')
+					.success( function onSuccess ( response ) {						
+						callback( response );
+					} );
+				}
+			};
+		}
 	] );
